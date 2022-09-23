@@ -1,6 +1,6 @@
 -- Noice is for OpenSimplex and Perlin noise for Lua(JIT)
 -- By Tachytaenius
--- Version 1
+-- Version 2
 
 -- TODO: Review whole thing
 
@@ -299,6 +299,8 @@ function perlinerMethods:extrapolate3D(cellX, cellY, cellZ, x, y, z, w, h, d)
 	return g1*dx+g2*dy+g3*dz
 end
 
+
+local noice = {}
 
 local simplexerMetatable = {__index = simplexerMethods}
 local perlinerMetatable = {__index = perlinerMethods}
